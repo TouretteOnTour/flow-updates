@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "published": "2026-09-21T11:12:19.402Z",
+  "published": "2026-09-21T11:16:19.295Z",
   "files": [
     {
       "path": "CSXS/manifest.xml",
@@ -12,7 +12,7 @@
     },
     {
       "path": "dist/assets/flow.js",
-      "size": 286591
+      "size": 286625
     },
     {
       "path": "dist/assets/style.css",
