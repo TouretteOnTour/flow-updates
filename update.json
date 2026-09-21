@@ -1,0 +1,66 @@
+{
+  "version": "0.1.0",
+  "published": "2026-09-21T11:12:19.402Z",
+  "files": [
+    {
+      "path": "CSXS/manifest.xml",
+      "size": 1772
+    },
+    {
+      "path": "dist/assets/Figtree-Variable.ttf",
+      "size": 62712
+    },
+    {
+      "path": "dist/assets/flow.js",
+      "size": 286591
+    },
+    {
+      "path": "dist/assets/style.css",
+      "size": 19650
+    },
+    {
+      "path": "dist/index.html",
+      "size": 340
+    },
+    {
+      "path": "dist/licenses/Figtree-OFL.txt",
+      "size": 4388
+    },
+    {
+      "path": "host/anchor.jsx",
+      "size": 11901
+    },
+    {
+      "path": "host/core.jsx",
+      "size": 7542
+    },
+    {
+      "path": "host/counter.jsx",
+      "size": 26177
+    },
+    {
+      "path": "host/easing.jsx",
+      "size": 12206
+    },
+    {
+      "path": "host/expression.jsx",
+      "size": 17743
+    },
+    {
+      "path": "host/index.jsx",
+      "size": 2623
+    },
+    {
+      "path": "host/matte.jsx",
+      "size": 13045
+    },
+    {
+      "path": "host/nulls.jsx",
+      "size": 14295
+    },
+    {
+      "path": "host/text.jsx",
+      "size": 22418
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Host range starts at 24.0 (AE 2024, CEP 11). AE 2025+ ships CEP 12, which
+  still accepts a CSXS 11 runtime requirement, so one manifest covers both.
+-->
+<ExtensionManifest Version="7.0"
+  ExtensionBundleId="com.flowtools.flow"
+  ExtensionBundleVersion="0.1.0"
+  ExtensionBundleName="Flow"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ExtensionList>
+    <Extension Id="com.flowtools.flow.panel" Version="0.1.0" />
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="AEFT" Version="[24.0,99.9]" />
+    </HostList>
+    <LocaleList>
+      <Locale Code="All" />
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="11.0" />
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="com.flowtools.flow.panel">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>./dist/index.html</MainPath>
+          <ScriptPath>./host/index.jsx</ScriptPath>
+          <CEFCommandLine>
+            <Parameter>--allow-file-access-from-files</Parameter>
+          </CEFCommandLine>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>Flow</Menu>
+          <Geometry>
+            <Size>
+              <Height>560</Height>
+              <Width>260</Width>
+            </Size>
+            <MinSize>
+              <Height>120</Height>
+              <Width>140</Width>
+            </MinSize>
+            <MaxSize>
+              <Height>4000</Height>
+              <Width>4000</Width>
+            </MaxSize>
+          </Geometry>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>
