@@ -1,7 +1,7 @@
 {
-  "version": "0.1.0",
-  "published": "2026-09-21T11:18:24.181Z",
-  "base": "v0.1.0",
+  "version": "0.2.0",
+  "published": "2026-09-21T12:48:24.474Z",
+  "base": "v0.2.0",
   "files": [
     {
       "path": "CSXS/manifest.xml",
@@ -13,11 +13,11 @@
     },
     {
       "path": "dist/assets/flow.js",
-      "size": 286799
+      "size": 296331
     },
     {
       "path": "dist/assets/style.css",
-      "size": 19650
+      "size": 21729
     },
     {
       "path": "dist/index.html",
@@ -37,7 +37,7 @@
     },
     {
       "path": "host/counter.jsx",
-      "size": 26177
+      "size": 28513
     },
     {
       "path": "host/easing.jsx",
@@ -49,7 +49,7 @@
     },
     {
       "path": "host/index.jsx",
-      "size": 2623
+      "size": 2638
     },
     {
       "path": "host/matte.jsx",
@@ -58,6 +58,10 @@
     {
       "path": "host/nulls.jsx",
       "size": 14295
+    },
+    {
+      "path": "host/project.jsx",
+      "size": 4628
     },
     {
       "path": "host/text.jsx",
