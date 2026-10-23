@@ -1,7 +1,7 @@
 {
-  "version": "0.2.0",
-  "published": "2026-09-21T12:48:24.474Z",
-  "base": "v0.2.0",
+  "version": "0.3.0",
+  "published": "2026-10-23T13:21:56.253Z",
+  "base": "v0.3.0",
   "files": [
     {
       "path": "CSXS/manifest.xml",
@@ -13,11 +13,11 @@
     },
     {
       "path": "dist/assets/flow.js",
-      "size": 296331
+      "size": 3763720
     },
     {
       "path": "dist/assets/style.css",
-      "size": 21729
+      "size": 28567
     },
     {
       "path": "dist/index.html",
@@ -28,16 +28,20 @@
       "size": 4388
     },
     {
+      "path": "dist/licenses/Rapier-Apache-2.0.txt",
+      "size": 11343
+    },
+    {
       "path": "host/anchor.jsx",
       "size": 11901
     },
     {
-      "path": "host/core.jsx",
-      "size": 7542
+      "path": "host/check.jsx",
+      "size": 33461
     },
     {
-      "path": "host/counter.jsx",
-      "size": 28513
+      "path": "host/core.jsx",
+      "size": 9079
     },
     {
       "path": "host/easing.jsx",
@@ -48,8 +52,12 @@
       "size": 17743
     },
     {
+      "path": "host/freemove.jsx",
+      "size": 10142
+    },
+    {
       "path": "host/index.jsx",
-      "size": 2638
+      "size": 2669
     },
     {
       "path": "host/matte.jsx",
@@ -60,12 +68,16 @@
       "size": 14295
     },
     {
-      "path": "host/project.jsx",
-      "size": 4628
+      "path": "host/physics.jsx",
+      "size": 33113
     },
     {
-      "path": "host/text.jsx",
-      "size": 22418
+      "path": "host/project.jsx",
+      "size": 15050
+    },
+    {
+      "path": "host/render.jsx",
+      "size": 10928
     }
   ]
 }
