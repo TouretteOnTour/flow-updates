@@ -11,7 +11,7 @@
 // and nothing for anyone to remember.
 
 (function () {
-  var MODULES = ["core.jsx", "anchor.jsx", "easing.jsx", "nulls.jsx", "expression.jsx", "matte.jsx", "text.jsx", "counter.jsx"];
+  var MODULES = ["core.jsx", "anchor.jsx", "easing.jsx", "nulls.jsx", "expression.jsx", "matte.jsx", "project.jsx", "check.jsx", "render.jsx", "physics.jsx", "freemove.jsx"];
 
   var hostDir = (typeof $.global.__flowHostDir === "string" && $.global.__flowHostDir)
     ? new Folder($.global.__flowHostDir)

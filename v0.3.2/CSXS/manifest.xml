@@ -5,11 +5,11 @@
 -->
 <ExtensionManifest Version="7.0"
   ExtensionBundleId="com.flowtools.flow"
-  ExtensionBundleVersion="0.1.0"
+  ExtensionBundleVersion="0.3.2"
   ExtensionBundleName="Flow"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ExtensionList>
-    <Extension Id="com.flowtools.flow.panel" Version="0.1.0" />
+    <Extension Id="com.flowtools.flow.panel" Version="0.3.2" />
   </ExtensionList>
   <ExecutionEnvironment>
     <HostList>
