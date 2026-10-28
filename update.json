@@ -1,7 +1,7 @@
 {
-  "version": "0.3.0",
-  "published": "2026-10-23T13:21:56.253Z",
-  "base": "v0.3.0",
+  "version": "0.3.1",
+  "published": "2026-10-28T09:04:57.449Z",
+  "base": "v0.3.1",
   "files": [
     {
       "path": "CSXS/manifest.xml",
@@ -13,7 +13,7 @@
     },
     {
       "path": "dist/assets/flow.js",
-      "size": 3763720
+      "size": 3764831
     },
     {
       "path": "dist/assets/style.css",
@@ -53,7 +53,7 @@
     },
     {
       "path": "host/freemove.jsx",
-      "size": 10142
+      "size": 13898
     },
     {
       "path": "host/index.jsx",
