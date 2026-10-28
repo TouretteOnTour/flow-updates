@@ -6,7 +6,7 @@ copy of Flow checks `update.json` here and updates itself from these files.
 The source code lives in a separate private repository. Nothing here is written
 by hand — it is published by `npm run publish:update`.
 
-Current version: **0.3.2**
+Current version: **0.3.3**
 
 ## Installing Flow for the first time
 

@@ -1,7 +1,7 @@
 {
-  "version": "0.3.2",
-  "published": "2026-10-28T09:40:00.429Z",
-  "base": "v0.3.2",
+  "version": "0.3.3",
+  "published": "2026-10-28T10:40:13.313Z",
+  "base": "v0.3.3",
   "files": [
     {
       "path": "CSXS/manifest.xml",
@@ -13,7 +13,7 @@
     },
     {
       "path": "dist/assets/flow.js",
-      "size": 3764947
+      "size": 3765859
     },
     {
       "path": "dist/assets/style.css",
@@ -53,11 +53,15 @@
     },
     {
       "path": "host/freemove.jsx",
-      "size": 14741
+      "size": 10142
+    },
+    {
+      "path": "host/hold.jsx",
+      "size": 10127
     },
     {
       "path": "host/index.jsx",
-      "size": 2669
+      "size": 2681
     },
     {
       "path": "host/matte.jsx",

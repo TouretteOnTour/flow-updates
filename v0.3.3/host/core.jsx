@@ -29,8 +29,13 @@
 
   var ESCAPES = { "\"": "\\\"", "\\": "\\\\", "\b": "\\b", "\f": "\\f", "\n": "\\n", "\r": "\\r", "\t": "\\t" };
 
+  // Everything above plain ASCII is escaped as well as what JSON requires.
+  // The reply travels back through evalScript, whose encoding of anything
+  // outside ASCII cannot be relied on, and text read out of a composition is
+  // full of it. JSON.parse in the panel turns the escapes back into the real
+  // characters, so the value is unchanged - only the bytes on the wire are.
   function quote(str) {
-    return "\"" + str.replace(/["\\\x00-\x1f\u2028\u2029]/g, function (ch) {
+    return "\"" + str.replace(/["\\\x00-\x1f\x7f-\uffff]/g, function (ch) {
       if (ESCAPES.hasOwnProperty(ch)) return ESCAPES[ch];
       var hex = ch.charCodeAt(0).toString(16);
       return "\\u" + "0000".substring(hex.length) + hex;
@@ -197,6 +202,42 @@
 
   Flow.hasActiveExpression = function (prop) {
     return prop.canSetExpression && prop.expressionEnabled && prop.expression !== "";
+  };
+
+  // saveFrameToPng returns before After Effects has finished writing: the file
+  // appears immediately, empty, and fills in a moment later. So the end of the
+  // PNG is what is waited for - the IEND chunk is the last thing written, and
+  // its presence means the whole image is on disk. A File object also answers
+  // .exists and .length from what it knew when it was made, which is why every
+  // look is a fresh one.
+  function pngComplete(path) {
+    var file = new File(path);
+    if (!file.exists) return false;
+    var size = file.length;
+    if (!size || size < 16) return false;
+    var tail = "";
+    try {
+      file.encoding = "BINARY";
+      if (!file.open("r")) return false;
+      file.seek(size - 8, 0);
+      tail = String(file.read(8));
+    } catch (e) {
+      tail = "";
+    }
+    try {
+      file.close();
+    } catch (closeError) { /* already closed */ }
+    return tail.indexOf("IEND") >= 0;
+  }
+
+  Flow.waitForPng = function (path, timeout, poll) {
+    var waited = 0;
+    while (waited < timeout) {
+      if (pngComplete(path)) return true;
+      $.sleep(poll);
+      waited += poll;
+    }
+    return pngComplete(path);
   };
 
   // ---------------------------------------------------------------- system
